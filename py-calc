@@ -1,0 +1,47 @@
+while True:
+    n1 = float(input('Digite o valor 1: '))
+    n2 = float(input('Digite o valor 2: '))
+    r = float(input('\n Digite a operação escolhida:'
+                    '\n 1 - Somar'
+                    '\n 2 - Multiplicar'
+                    '\n 3 - Dividir'
+                    '\n 4 - Subtrair'
+                    '\n 5 - Sair do programa'
+                    '\n___________________________________'
+                    '\n   > '))
+
+    if (r==1):
+        print('SOMA................\n',
+        f'{n1} + {n2} = {round(n1 + n2,2)}')
+
+    elif (r==2):
+        print('MULTIPLICAÇÃO................\n',
+        f'{n1} x {n2} = {round(n1 * n2,2)}')
+
+    elif (r==3):
+        print('DIVISÃO................\n',
+        f'{n1} / {n2} = {round(n1 / n2,2)}')
+
+    elif (r==4):
+        print('SUBTRAÇÃO................\n',
+        f'{n1} - {n2} = {round(n1 - n2,2)}')
+
+    elif (r==5):
+        print('\n.....Até a próxima!.....')
+        break
+
+    else:
+        print('\n>>>>>ATENÇÃO: Digite um número válido.<<<<<')
+
+    while True:
+        cont = int(input('\nDeseja realizar novo cálculo? \n 1 - SIM \n 2 - NÃO \n > '))
+        if (cont == 1):
+            break
+        elif (cont == 2):
+            break
+        else:
+            print('\n>>>>>ATENÇÃO: Digite um número válido.<<<<<')
+            continue
+    if(cont==2):
+        print('\n.....Até a próxima!.....')
+        break
