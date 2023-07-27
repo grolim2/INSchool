@@ -1,0 +1,12 @@
+#sistema de cadastro e confirmação de senha
+print('\n#### Olá, seja bem vindo ao sistema de cadastro de senha! ####\n')
+senha = input('Digite a senha que deseja cadastrar: ')
+
+print('\n\n#### Agora vamos testar sua senha. ####\n\n')
+tentativa_senha = 0
+while senha != tentativa_senha:
+    tentativa_senha = input('Digite a senha: ')
+    if senha != tentativa_senha:
+        print('\n*** ATENÇÃO: SENHA INCORRETA ***')
+        continue
+    print('\n#### Senha correta! ####')
