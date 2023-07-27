@@ -1,0 +1,7 @@
+qtd = int(input('Digite a quantidade de numeros que deseja informar: '))
+n = 0
+while n <qtd:
+    n += 1
+    num = float(input(f'Digite o numero {n}:'))
+    if (num % 2 ==0):
+        print(num)
