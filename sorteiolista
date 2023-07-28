@@ -1,0 +1,29 @@
+print('### Digite o nome e telefone do cliente, ao final, digite "FIM" para realizar o sorteio. ###')
+lista_ID = []
+lista_clientes = []
+lista_telefones = []
+i = 0
+nome = str(0)
+
+while True:
+    nome = input('Insira o nome do cliente: ')
+    if nome.lower() != "fim":
+        lista_clientes.append(nome)
+        telefone = input('Insira o Telefone do clienre (SOMENTE NUMEROS): ')
+        lista_telefones.append(telefone)
+    else:
+        break
+
+    lista_ID.append(i)
+    i += 1
+
+from random import randint
+sorteio = (randint(0,i-1))
+print(sorteio)
+
+print(lista_clientes[sorteio],lista_telefones[sorteio])
+
+
+print(lista_ID)
+print(lista_clientes)
+print(lista_telefones)
