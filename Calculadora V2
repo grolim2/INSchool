@@ -1,0 +1,43 @@
+def soma(v1,v2):
+    return v1+v2
+
+def subtracao(v1,v2):
+    return v1-v2
+
+def divisao(v1,v2):
+    if v2 == 0:
+        print('****O divisor é igual a zero. Reinicie a operação.****')
+    else:
+        return v1/v2
+
+def multi(v1,v2):
+    return v1*v2
+
+while True:
+    op = input('Digite a operação que deseja realizar: \n'
+           '+ = SOMA\n'
+           '- = SUBTRAÇÃO\n'
+           '/ = DIVISÃO\n'
+           '* = MULTIPLICAÇÃO\n'
+           'Sair = Encerrar a aplicação\n'
+           '===== ')
+    if op not in ['+','-','/','*','Sair']:
+        print('\n*****Digite uma operação válida.*****\n')
+        continue
+    elif op == 'Sair':
+        break
+    else:
+        v1 = float(input('Digite o Valor 1: '))
+        v2 = float(input('Digite o Valor 2: '))
+
+        if op == '+':
+            print(soma(v1, v2))
+        elif op == '-':
+            print(subtracao(v1, v2))
+        elif op == '/':
+            print(divisao(v1, v2))
+        elif op == '*':
+            print(multi(v1, v2))
+
+
+
