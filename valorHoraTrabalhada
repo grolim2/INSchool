@@ -1,0 +1,8 @@
+def calc_hora(rs,h):
+    valorh = rs/h
+    return  valorh
+
+salario = float(input('Digite seu salario: '))
+hora = float(input('Digite qtd de horas trabalhadas: '))
+
+print(f'{calc_hora(salario,hora):.2f}')
