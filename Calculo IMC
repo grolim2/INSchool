@@ -1,0 +1,18 @@
+
+def IMC_calc(imcs:list):
+    n = len(imcs)
+    lista_imcs = []
+    for i in range(n):
+        calculo = imcs[i][0]/(imcs[i][1]**2)
+        lista_imcs.append(calculo)
+    return lista_imcs
+
+baseimc = []
+for i in range(4):
+    peso = float(input('Digite seu peso: '))
+    altura = float(input('Digite sua altura: '))
+
+    pessoa = [peso,altura]
+    baseimc.append(pessoa)
+
+print(IMC_calc(baseimc))
